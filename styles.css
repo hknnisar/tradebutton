@@ -45,7 +45,22 @@ body {
 }
 
 .question u{
-    color: #FFC700
+    color: #FFC700;
+    text-decoration: none;
+}
+
+.question u:hover{
+    display:flexbox;
+    text-decoration: underline;
+    /* background-color: #FFC700;
+    color: #383838; */
+    animation-name: example;
+    animation-duration: 300ms;
+}
+
+@keyframes example {
+    0% {text-decoration: none; text-decoration-color: #383838;}
+    100% {text-decoration: underline; text-decoration-color: #FFC700}
 }
 
 .questionA {
@@ -85,6 +100,12 @@ body {
     width: 20%;
     padding-top: 1%;
     padding-bottom: 1%;
+    transition: min-width 250ms, max-width 250ms;
+}
+
+.story2 img:hover{
+    min-width: 288px;
+    max-width:288px;
 }
 
 .story3 {
@@ -206,6 +227,15 @@ hr {
     padding-right: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
+    transition: width 300ms, padding-left 300ms, padding-right 300ms, padding-top 300ms, padding-bottom 300ms;
+}
+
+.threeblock img:hover {
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 2.5%;
+    padding-bottom:  2.5%;
 }
 
 .threeblock3 img {
@@ -214,7 +244,17 @@ hr {
     padding-right: 20%;
     padding-top: 5%;
     padding-bottom: 5%;
+    transition: width 300ms, padding-left 300ms, padding-right 300ms;
 }
+
+.threeblock3 img:hover {
+    width: 65%;
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
 
 .threeblocktitle {
     overflow: hidden;
@@ -270,12 +310,17 @@ hr {
     border-width: thick;
     border-color: #FFC700;
     border-style: solid;
+    transition: background-color 300ms, color 300ms;
 }
+
 .rate1 button:hover {
     background-color: #FFC700;
     color: #383838;
     border-style: solid;
 }
+
+
+
 .rate2 {
     justify-content: center;
     /* align-items: center; */
@@ -299,12 +344,13 @@ hr {
     border-width: thick;
     border-color: #FFC700;
     border-style: solid;
+    transition: background-color 300ms, color 300ms;
 }
 .rate2 button:hover {
     background-color: #FFC700;
     color: #000000;
-    border-style: solid;
 }
+
 .rate3 {
     justify-content: center;
     /* align-items: center; */
@@ -329,11 +375,13 @@ hr {
     border-width: thick;
     border-color: #000000;
     border-style: solid;
+    transition: padding 300ms, background-color 300ms, color 300ms;
 }
 .rate3 button:hover {
     background-color: #000000;
     color: #FFC700;
     border-style: solid;
+    padding: 3.5%;
 }
 
 .invitation {
