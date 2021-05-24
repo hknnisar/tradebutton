@@ -20,16 +20,46 @@
 
             gtag('config', 'UA-171393756-1');
         </script>
+
+        <!-- Smooth Scroll -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+            
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+            });
+        </script>
     </head>
     <body>
 
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-              <a href="#">About</a>
-              <a href="#">Services</a>
-              <a href="#">Clients</a>
-              <a href="#">Contact</a>
+            <div class="overlay-content" onclick="closeNav()">
+              <!-- <a href="#nav-home">Home</a> -->
+              <a href="#nav-tiers" >Tiers</a>
+              <a href="#nav-about">About</a>
+              <!-- <a href="#">Clients</a> -->
+              <a href="#nav-contact">Contact</a>
             </div>
           </div>          
 
@@ -39,15 +69,16 @@
           </div> -->
           
           <div class="header" id="myHeader">
-            <img src="./images/TRADEBUTTON.svg" alt="Trade Button Company">
+            <a href="#nav-home">
+            <img src="./images/TRADEBUTTON.svg" alt="Trade Button Company" ></a>
             <div class="menu" onclick="openNav()">
                 &#9776;
             </div>
           </div>
           
-          <div class="content">
+          <div class="content" id="nav-home">
             <div class="question">
-                DO YOU WANT <u>PASSIVE</u> INCOME?
+                DO YOU WANT <u>PASSIVE</u> INCOME? 
             </div>
             <div class="question">
                 DO YOU WANT <u>AUTOMATED</u> TRADING?
@@ -67,15 +98,15 @@
                 First you define your risk and capital. Then every morning, simply engage the button, and <b>your</b> Cloud VM will log into <b>your</b> broker account and <b>automatically</b> take trades for you.
             </div>
             <hr>
-            <div class="story4">
+            <div class="story4" id="nav-tiers">
                 In short,
                 <br>
                 we setup, maintain and continuously update strategies,
                 <br>
                 you simply press the button, and trade algorithmically.
             </div>
-            <div class="offering">
-                <u>WE OFFER THE FOLLOWING TIERS</u>
+            <div class="offering" >
+                <u>WE OFFER THE FOLLOWING THREE TIERS</u>
             </div>
             <div class="tier1">
                 BASE TIER
@@ -154,21 +185,33 @@
             <div class="three3">
                 <div class="threeblock3">
                     <img src="./images/tradebutton_partner.svg" alt="Trade Button Company">
-                    <div class="threeblocktitle3">
+                    <div class="threeblocktitle3" >
                         BE A PART OF OUR TEAM
                     </div>
                 </div>
             </div>
-            <div class="rate3">
+            <div class="rate3"  id="nav-about">
                 <button>STARTS FROM ₹1 CR</button>
             </div>
-            <div class="invitation">
+            <div class="invitation" >
                 ✱ BY INVITATION ONLY
             </div>
-            <div class="footer">
+            <div class="tier2">ABOUT US</div>
+            <div class="about1">
+                <p>We are a nimble team of four, dedicated to <b> sustainable growth of wealth using systematic automated trading. </b></p>
+                <p>Our team comprises of two creatives. One is an options trader, the other is a value investor. Their role is envisage new strategies. They actively participate in the algo community on the lookout for interesting ideas. </p>
+                <p>We have one <a href="https://harshnisar.com">coder</a> on the team. He is an engineer. His work includes writing code for back-testing, data management, execution algorithms and ensuring strategy robustness, with a well define encodable premise.</p>
+                <p>Lastly we have one data cruncher. He is an engineer and an expert with data analytics. He is responsible for post-processing and slippage management. His output feeds back into testing to refine the strategy.</p>
+            </div>
+            <hr class="hr2">
+            <div class="about2" >
+                <p>We believe in simple strategies powered by a long period of dense historic data with defined risk, moderate but sustainable returns, and sound money management, indifferent to index direction. We take extreme care to be vigilant of sensational results, which are usually an outcome of over-fitting over, necessarily, a short period of time. The market has a habit of humbling traders who do not suspect similarly.</p>
+                <p>We share your intent on success since we use what we build on our own capital. We believe this is an incentive is essential to ensure our offering is superlative.</p>
+            </div>
+            <div class="footer" id="nav-contact">
                 <div class="footerrow">
                     <div class="contact">
-                        <u>CONTACT@TRADEBUTTON.CO</u>
+                        <a href="mailto:contact@tradebutton.co"><u>CONTACT@TRADEBUTTON.CO</u></a>
                     </div>
                     <div class="contact">
                         <u>+91 996 972 5005</u>
@@ -176,7 +219,7 @@
                 </div>
                 <div class="footerrow">
                     <div class="contact">
-                        <b>TRADE BUTTON COMPANY</b>
+                        <img src="images/ICON.svg" height=""></img><b> TRADE BUTTON COMPANY</b>
                     </div>
                     <div class="contact">
                         © 2021 — All Rights Reserved
