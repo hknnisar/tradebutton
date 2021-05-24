@@ -429,6 +429,9 @@ hr {
 
 }
 
+.about1 a{
+    color:#FFFFFF;
+}
 .about2 {
     justify-content: center;
     /* align-items: center; */
