@@ -5,7 +5,7 @@ body {
     margin: 0;
     font-family: 'Lato';
     font-size: 100%;
-    background-color: black;
+    background-color: #000000;
   }
   
 .top-container {
@@ -24,13 +24,21 @@ body {
     width:100%;
     display: flex;
     z-index: 7;
-  }
+    animation-name: unstick_anime;
+    animation-duration: 300ms;
+}
+
+@keyframes unstick_anime {
+  0% {padding-top: 1%; padding-bottom: 1%;}
+  100% {padding-top: 3%; padding-bottom: 3%;}
+}  
   
 .header img{
     width: 30%;
 /*    max-width: 320px;*/
     vertical-align: middle;
 }
+
 
 .menu{
     text-align: right;
@@ -593,14 +601,36 @@ hr {
     position: fixed;
     top: 0;
     width:100%;
-  }
-  
+    padding-top: 1%;
+    padding-bottom: 1%;
+    animation-name: stick_anime;
+    animation-duration: 300ms;
+}
+
+@keyframes stick_anime {
+  0% {padding-top: 3%; padding-bottom: 3%;}
+  100% {padding-top: 1%; padding-bottom: 1%;}
+}
+
+
+
 .sticky + .content {
     padding-top: 13.079578606%;
   }
   
 
 @media only screen and (orientation: portrait){
+
+.header {
+    animation-name: unstick_anime;
+    animation-duration: 300ms;
+}
+
+@keyframes unstick_anime {
+  0% {padding-top: 3%; padding-bottom: 3%;}
+  100% {padding-top: 3%; padding-bottom: 3%;}
+}  
+
 
     .story1 {
         font-size: max(1.5vw,1.2em);
@@ -792,6 +822,21 @@ hr {
         height: 1px;
       }
 
+    .sticky {
+        position: fixed;
+        top: 0;
+        width:100%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        animation-name: stick_anime;
+        animation-duration: 300ms;
+    }
+    
+    @keyframes stick_anime {
+      0% {padding-top: 3%; padding-bottom: 3%;}
+      100% {padding-top: 3%; padding-bottom: 3%;}
+    }
+
     .sticky + .content {
         padding-top: 13.279578606%;
       }
@@ -854,541 +899,3 @@ hr {
         }
       }
 
-      @media (prefers-color-scheme: dark) {
-
-        body {
-            background-color: black
-          }
-          
-        .top-container {
-            background-color: #383838;
-          }
-          
-        .header {
-            background: #000000;
-            color: #f1f1f1;
-          }
-                          
-        .question {
-            background-color: #383838;
-            color: #FFFFFF ;
-        }
-        
-        .question u{
-            color: #FFC700;
-        }
-        
-        @keyframes example {
-            0% {text-decoration: none; text-decoration-color: #383838;}
-            100% {text-decoration: underline; text-decoration-color: #FFC700}
-        }
-        
-        .questionA {
-            background-color: #FFC700;
-            color: #000000 ;
-        }
-        
-        .story1 {
-            background-color: #000000;
-            color: #FFC700;
-        }
-        
-        .story2 {
-            background-color: #000000;
-            
-        }
-
-        .story3 {
-            background-color: #000000;
-            color: #FFC700;
-        }
-        
-        hr {
-            background-color:#FFC700;
-          }
-        
-        .story4 {
-            background-color: #000000;
-            color: #FFC700;
-        }
-        
-        .performance {
-            background-color: #383838;
-        }
-                
-        .performanceblocktitle {
-            color: #FFFFFF ;
-        }
-        
-        .performanceblocktext {
-            color: #FFFFFF ;
-        }
-        
-        .performance_discuss {
-            color:#FFFFFF;
-        }
-        
-        .offering {
-            background-color: #FFC700;
-            color: #000000;
-        }
-        
-        
-        .tier1 {
-            background-color: #383838;
-            color: #FFFFFF ;
-        }
-        
-        .three1 {
-            background-color: #383838;
-        }
-        
-        .tier2 {
-            background-color: #000000;
-            color: #FFFFFF ;
-        }
-        .three2 {
-            background-color: #000000;
-        }
-        
-        .tier3 {
-            background-color: #FFC700;
-            color: #000000 ;
-        }
-        .three3 {
-            background-color: #FFC700;
-        }
-        
-        .threeblocktitle {
-            color: #FFFFFF ;
-        }
-        
-        .threeblocktitle3 {
-            color: #000000 ;
-        }
-        
-        .threeblocktext {
-            color: #FFFFFF ;
-        }
-        
-        .rate1 {
-            background-color: #383838;
-        }
-        
-        .rate1 button {
-            background-color: #383838;
-            color: #FFC700;
-            border-color: #FFC700;
-        }
-        
-        .rate1 button:hover {
-            background-color: #FFC700;
-            color: #383838;
-        }
-        
-        
-        
-        .rate2 {
-            background-color: #000000;
-        }
-        .rate2 button {
-            background-color: #000000;
-            color: #FFC700;
-            border-color: #FFC700;
-        }
-        .rate2 button:hover {
-            background-color: #FFC700;
-            color: #000000;
-        }
-        
-        .rate3 {
-            background-color: #FFC700;
-        }
-        
-        .rate3 button {
-            background-color: #FFC700;
-            color: #000000;
-            border-color: #000000;
-        }
-        .rate3 button:hover {
-            background-color: #000000;
-            color: #FFC700;
-        }
-        
-        .invitation {
-            background-color: #383838;
-            color: #FFFFFF;
-        }
-        
-        .about1 {
-            background-color: #000000;
-            color: #FFFFFF;
-        }
-        
-        .about1 a{
-            color:#FFFFFF;
-        }
-        .about2 {
-            background-color: #000000;
-            color: #FFFFFF;
-        }
-        
-        .hr2 {
-            background-color:#FFFFFF;
-          }
-        
-        .footer{
-            background-color: #000000;
-        }
-        
-        .contact {
-            color: #FFFFFF ;
-        }
-        
-        .contact u{
-            color: #FFC700;
-        }
-        
-        @media only screen and (orientation: portrait){
-        
-            .story1 {
-                background-color: #000000;
-                color: #FFC700;
-            }
-            
-            .story3 {
-                background-color: #000000;
-                color: #FFC700;
-            }
-        
-            hr {
-                background-color:#FFC700;
-              }
-            
-            .story4 {
-                background-color: #000000;
-                color: #FFC700;
-            }
-            .three1 {
-                background-color: #383838;
-            }
-            
-            .three2 {
-                background-color: #000000;
-            }
-                
-            .footer{
-                background-color: #000000;
-            }
-            
-            .contact {
-                color: #FFFFFF ;
-            }
-        
-            .performance_discuss {
-                background-color: #383838;
-                color:#FFFFFF;
-            }
-
-            .about1 {
-                background-color: #000000;
-                color: #FFFFFF;
-            }
-            
-            .about1 a{
-                color:#FFFFFF;
-            }
-        
-            .about2 {
-                background-color: #000000;
-                color: #FFFFFF;
-            }
-            
-            .hr2 {
-                background-color:#FFFFFF;
-              }
-                
-        
-            /* overlay menu*/
-            .overlay {
-                background-color: rgb(0,0,0);
-                background-color: rgba(0,0,0, 0.9);
-              }
-                            
-              .overlay a {
-                color: #FFFFFF;
-              }
-              
-              .overlay a:hover, .overlay a:focus {
-                color: #FFC700;
-              }
-      }
-
-      @media (prefers-color-scheme: light) {
-        body {
-            background-color: black
-          }
-          
-        .top-container {
-            background-color: #383838;
-          }
-          
-        .header {
-            background: #000000;
-            color: #f1f1f1;
-          }
-                          
-        .question {
-            background-color: #383838;
-            color: #FFFFFF ;
-        }
-        
-        .question u{
-            color: #FFC700;
-        }
-        
-        @keyframes example {
-            0% {text-decoration: none; text-decoration-color: #383838;}
-            100% {text-decoration: underline; text-decoration-color: #FFC700}
-        }
-        
-        .questionA {
-            background-color: #FFC700;
-            color: #000000 ;
-        }
-        
-        .story1 {
-            background-color: #000000;
-            color: #FFC700;
-        }
-        
-        .story2 {
-            background-color: #000000;
-            
-        }
-
-        .story3 {
-            background-color: #000000;
-            color: #FFC700;
-        }
-        
-        hr {
-            background-color:#FFC700;
-          }
-        
-        .story4 {
-            background-color: #000000;
-            color: #FFC700;
-        }
-        
-        .performance {
-            background-color: #383838;
-        }
-                
-        .performanceblocktitle {
-            color: #FFFFFF ;
-        }
-        
-        .performanceblocktext {
-            color: #FFFFFF ;
-        }
-        
-        .performance_discuss {
-            color:#FFFFFF;
-        }
-        
-        .offering {
-            background-color: #FFC700;
-            color: #000000;
-        }
-        
-        
-        .tier1 {
-            background-color: #383838;
-            color: #FFFFFF ;
-        }
-        
-        .three1 {
-            background-color: #383838;
-        }
-        
-        .tier2 {
-            background-color: #000000;
-            color: #FFFFFF ;
-        }
-        .three2 {
-            background-color: #000000;
-        }
-        
-        .tier3 {
-            background-color: #FFC700;
-            color: #000000 ;
-        }
-        .three3 {
-            background-color: #FFC700;
-        }
-        
-        .threeblocktitle {
-            color: #FFFFFF ;
-        }
-        
-        .threeblocktitle3 {
-            color: #000000 ;
-        }
-        
-        .threeblocktext {
-            color: #FFFFFF ;
-        }
-        
-        .rate1 {
-            background-color: #383838;
-        }
-        
-        .rate1 button {
-            background-color: #383838;
-            color: #FFC700;
-            border-color: #FFC700;
-        }
-        
-        .rate1 button:hover {
-            background-color: #FFC700;
-            color: #383838;
-        }
-        
-        
-        
-        .rate2 {
-            background-color: #000000;
-        }
-        .rate2 button {
-            background-color: #000000;
-            color: #FFC700;
-            border-color: #FFC700;
-        }
-        .rate2 button:hover {
-            background-color: #FFC700;
-            color: #000000;
-        }
-        
-        .rate3 {
-            background-color: #FFC700;
-        }
-        
-        .rate3 button {
-            background-color: #FFC700;
-            color: #000000;
-            border-color: #000000;
-        }
-        .rate3 button:hover {
-            background-color: #000000;
-            color: #FFC700;
-        }
-        
-        .invitation {
-            background-color: #383838;
-            color: #FFFFFF;
-        }
-        
-        .about1 {
-            background-color: #000000;
-            color: #FFFFFF;
-        }
-        
-        .about1 a{
-            color:#FFFFFF;
-        }
-        .about2 {
-            background-color: #000000;
-            color: #FFFFFF;
-        }
-        
-        .hr2 {
-            background-color:#FFFFFF;
-          }
-        
-        .footer{
-            background-color: #000000;
-        }
-        
-        .contact {
-            color: #FFFFFF ;
-        }
-        
-        .contact u{
-            color: #FFC700;
-        }
-        
-        @media only screen and (orientation: portrait){
-        
-            .story1 {
-                background-color: #000000;
-                color: #FFC700;
-            }
-            
-            .story3 {
-                background-color: #000000;
-                color: #FFC700;
-            }
-        
-            hr {
-                background-color:#FFC700;
-              }
-            
-            .story4 {
-                background-color: #000000;
-                color: #FFC700;
-            }
-            .three1 {
-                background-color: #383838;
-            }
-            
-            .three2 {
-                background-color: #000000;
-            }
-                
-            .footer{
-                background-color: #000000;
-            }
-            
-            .contact {
-                color: #FFFFFF ;
-            }
-        
-            .performance_discuss {
-                background-color: #383838;
-                color:#FFFFFF;
-            }
-
-            .about1 {
-                background-color: #000000;
-                color: #FFFFFF;
-            }
-            
-            .about1 a{
-                color:#FFFFFF;
-            }
-        
-            .about2 {
-                background-color: #000000;
-                color: #FFFFFF;
-            }
-            
-            .hr2 {
-                background-color:#FFFFFF;
-              }
-                
-        
-            /* overlay menu*/
-            .overlay {
-                background-color: rgb(0,0,0);
-                background-color: rgba(0,0,0, 0.9);
-              }
-                            
-              .overlay a {
-                color: #FFFFFF;
-              }
-              
-              .overlay a:hover, .overlay a:focus {
-                color: #FFC700;
-              }
-      }
