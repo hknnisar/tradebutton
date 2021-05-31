@@ -28,14 +28,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="1005.2764"
-     inkscape:cy="440.18774"
+     inkscape:zoom="0.41445708"
+     inkscape:cx="1059.217"
+     inkscape:cy="250"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1027"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -62,32 +62,11 @@
        d="M 293.87142,164.70832 201.6573,296.99998 H 489.695 c 39.2646,0 70.87474,-29.50103 70.87474,-66.14583 0,-36.64479 -31.61014,-66.14583 -70.87474,-66.14583 z"
        id="rect837-3-8-8-0-5-0"
        inkscape:connector-curvature="0" />
-    <rect
-       style="opacity:1;vector-effect:none;fill:#383838;fill-opacity:1;stroke:none;stroke-width:3.78074193;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
-       id="rect837-0"
-       width="661.45831"
-       height="132.29167"
-       x="3.3236916"
-       y="523.9162"
-       ry="66.145836" />
-    <path
-       style="fill:#00ff00;stroke:#00ff00;stroke-width:1.32291663;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 3.3353275,590.01822 H 36.408237"
-       id="path841-0"
-       inkscape:connector-curvature="0" />
     <path
        style="opacity:1;vector-effect:none;fill:#ffc700;fill-opacity:1;stroke:none;stroke-width:3.18105173;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
        d="M 68.862241,164.70832 C 30.712557,164.70832 0,194.20936 0,230.85415 c 0,36.6448 30.712557,66.14583 68.862241,66.14583 H 214.56505 L 304.1613,164.70832 Z"
        id="rect837-0-8"
        inkscape:connector-curvature="0" />
-    <rect
-       style="opacity:1;vector-effect:none;fill:#ff2a2a;fill-opacity:1;stroke:none;stroke-width:5.91987276;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
-       id="rect837-3-8-8-0-5-0-9-4"
-       width="820.06885"
-       height="466.41412"
-       x="89.578636"
-       y="-1068.1182"
-       transform="rotate(33.045848)" />
   </g>
   <g
      inkscape:label="Layer 1"
