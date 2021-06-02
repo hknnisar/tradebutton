@@ -26,6 +26,7 @@ body {
     z-index: 7;
     animation-name: unstick_anime;
     animation-duration: 300ms;
+    box-shadow: 0px 5px 10px rgb(0,0,0,0.4);
 }
 
 @keyframes unstick_anime {
@@ -53,6 +54,7 @@ body {
 
 .menu:hover, .menu:focus{
     font-weight: 700;
+    color: #FFC700
     }
 
 .content {
@@ -866,8 +868,8 @@ hr {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0, 0.9);
+        /* background-color: rgb(0,0,0); */
+        background-color: #383838;
         overflow-y: hidden;
         transition: 0.5s;
         z-index: 9;
@@ -923,7 +925,13 @@ hr {
         .header {
             background: #E3E3E3;
             color: #000000;
+            box-shadow: 0px 2.5px 5px rgb(0,0,0,0.2);
         }
+        .menu:hover, .menu:focus{
+            /* font-weight: 700; */
+            color: #383838
+            }
+        
         .question {
             background-color: #C7C7C7;
             color: #383838;
