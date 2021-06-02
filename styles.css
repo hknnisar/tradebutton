@@ -47,11 +47,12 @@ body {
     margin:auto;
     padding-right: 5%;
     cursor: pointer;
+    font-weight: 300;
     /* vertical-align: middle; */
 }
 
 .menu:hover, .menu:focus{
-    font-weight: 900;
+    font-weight: 700;
     }
 
 .content {
@@ -634,6 +635,16 @@ hr {
     0% {padding-top: 3%; padding-bottom: 3%;}
     100% {padding-top: 3%; padding-bottom: 3%;}
         }  
+
+    .menu{
+        font-size: 9vw;
+        margin:-3%;
+        padding-right: 5%;
+        cursor: pointer;
+        font-weight: 300;
+        /* vertical-align: middle; */
+    }
+        
 
 
     .story1 {
