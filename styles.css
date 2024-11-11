@@ -542,6 +542,9 @@ hr {
 .about1 a{
     color:#FFFFFF;
 }
+.about2 a{
+    color:#FFFFFF;
+}
 .about2 {
     justify-content: center;
     /* align-items: center; */
@@ -646,8 +649,6 @@ hr {
         font-weight: 300;
         /* vertical-align: middle; */
     }
-        
-
 
     .story1 {
         font-size: max(1.5vw,1.2em);
@@ -673,7 +674,8 @@ hr {
         padding-top: 3%;
         padding-bottom: 1%;
     }
-    
+      
+
     .story3 {
         font-size: max(1.5vw,1.2em);
         font-weight: 300;
@@ -809,7 +811,9 @@ hr {
     .about1 a{
         color:#FFFFFF;
     }
-
+    .about2 a{
+        color:#FFFFFF;
+    }
     .about2 {
         justify-content: center;
         /* align-items: center; */
@@ -1029,6 +1033,9 @@ hr {
             background-color: #FFFFFF;
             color: #000000;
             font-weight: 500;
+        }
+        .about2 a{
+            color: #000000;
         }
         .hr2 {
             background-color: #000000;
